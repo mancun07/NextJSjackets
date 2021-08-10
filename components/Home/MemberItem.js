@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './MemberItem.module.scss'
+import Image from 'next/image'
 
 const MemberItem = ({el}) => {
     return (
@@ -8,7 +9,7 @@ const MemberItem = ({el}) => {
                 {el.title}
             </span>
             <span className={classes[`member-item__photo`]}>
-                <img src={el.src} alt={el.title} />
+                <Image src={el.src} alt={el.title} width="300px" height="300px"/>
             </span>
         </div>
     )

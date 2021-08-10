@@ -1,6 +1,6 @@
 import React from 'react'
 import MemberItem from './MemberItem'
-import classes from './MembersList.module.css'
+import classes from './MembersList.module.scss'
 
 const MembersList = (props) => {
     return (

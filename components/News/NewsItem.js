@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './NewsItem.module.scss'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 const NewsItem = ({el}) => {
     const router = useRouter();
@@ -12,7 +13,10 @@ const NewsItem = ({el}) => {
     return (
         <div className={classes.newsItem}>
             <div className={classes.imageWrapper}>
-                  <img src={el.image}/>
+                  <Image src={el.image} alt={el.title}
+                  width="200" height="130"
+                  layout="responsive"
+                  />
             </div>
             <p>{el.date}</p>
             <h2>{el.title}</h2>

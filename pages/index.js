@@ -6,9 +6,9 @@ import React from 'react'
 import MembersList from '../components/Home/MembersList'
 
 const dummyImages = [
-  {id: '1', src:'./concert1.jpg'},
-  {id: '2', src:'./concert2.jpg'},
-  {id: '3', src:'./concert3.jpg'},
+  {id: '1', src:'/concert1.jpg'},
+  {id: '2', src:'/concert2.jpg'},
+  {id: '3', src:'/concert3.jpg'},
 ]
 
 const dummySocials = [
@@ -31,10 +31,10 @@ const dummySocials = [
 ]
 
 const DummyMembers = [
-  {id: '1', title: 'Boris Britva - вокал, гитара', src: './boris.jpg', direction: 'row-reverse'},
-  {id: '2', title: 'Боярский Максим - ударные', src: './maxim.jpg', direction: 'row'},
-  {id: '3', title: 'Музыченко Дмитрий - бас', src: './dima.jpg', direction: 'row-reverse'},
-  {id: '4', title: 'Андрей Лазук - клавишные', src: './andrew.jpg', direction: 'row'}
+  {id: '1', title: 'Boris Britva - вокал, гитара', src: '/boris.jpg', direction: 'row-reverse'},
+  {id: '2', title: 'Боярский Максим - ударные', src: '/maxim.jpg', direction: 'row'},
+  {id: '3', title: 'Музыченко Дмитрий - бас', src: '/dima.jpg', direction: 'row-reverse'},
+  {id: '4', title: 'Андрей Лазук - клавишные', src: '/andrew.jpg', direction: 'row'}
 ]
 
 

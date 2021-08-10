@@ -1,6 +1,6 @@
 import React from 'react'
 import SocialsLink from './SocialsLink'
-import classes from './Description.module.css'
+import classes from './Description.module.scss'
 
 const Description = (props) => {
     return (

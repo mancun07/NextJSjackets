@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import classes from './SocialsLink.module.css'
+import classes from './SocialsLink.module.scss'
 import Link from 'next/link'
 
 const SocialsLink = ({el}) => {
