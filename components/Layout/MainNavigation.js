@@ -24,7 +24,7 @@ const MainNavigation = () => {
                     <li><Link href="/">ГЛАВНАЯ</Link></li>
                     <li><Link href={'/news'}>НОВОСТИ</Link></li>
                     <li><Link href="/photos">ФОТО</Link></li>
-                    <li><Link href="/">ВИДЕО</Link></li>
+                    <li><Link href="/videos">ВИДЕО</Link></li>
                 </ul>
                 <ul className={classes.menu2}>
                     <li><Link href="/">VK</Link></li>
@@ -40,7 +40,7 @@ const MainNavigation = () => {
                 <li onClick={toggleMenu}><Link href={'/'}>ГЛАВНАЯ</Link></li>
                 <li onClick={toggleMenu}><Link href={'/news'}>НОВОСТИ</Link></li>
                 <li onClick={toggleMenu}><Link href={'/photos'}>ФОТО</Link></li>
-                <li onClick={toggleMenu}><Link href={'/video'}>ВИДЕО</Link></li>
+                <li onClick={toggleMenu}><Link href={'/videos'}>ВИДЕО</Link></li>
             </ul>
      
             <ul className="sidenav__nav__socials">
