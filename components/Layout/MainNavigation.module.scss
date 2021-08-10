@@ -1,0 +1,139 @@
+.header {
+    background:#333 linear-gradient(180deg,#000,transparent);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.menu1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+        padding:0 10px;
+    }
+    
+}
+
+.menu2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+        padding: 0 10px;
+    }
+
+}
+
+// Mobile menu
+
+.sidenav-trigger {
+    display: none;
+    content: "";
+    background: #fff;
+    height: 3px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+  
+    &::before {
+      content: "";
+      background: #fff;
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      top: 10px;
+      cursor: pointer;
+    }
+  
+    &::after {
+      content: "";
+      background: #fff;
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      bottom: 10px;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .sidenav-trigger {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+  }
+
+  .sidenav {
+    height: 0;
+    background: transparent;
+    transform: translateX(-1300px);
+    transition: all 0.3s ease;
+    line-height: 2.5;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .sidenav-is-active {
+    height: 100vh;
+    transform: translateX(0) translateY(10px);
+    background: #333;
+    opacity: 1;
+    padding: 10px;
+    font-size: 20px;
+  
+    .sidenav__nav__menu li {
+      display: block;
+    }
+  
+    .sidenav__nav__menu a {
+      display: block;
+      color: #fff;
+      border-bottom: 1px #fff solid;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  
+      &:hover {
+        color: rgba(255, 0, 0, 0.5);
+      }
+    }
+  
+    .sidenav__nav__socials li {
+      display: inline-block;
+    }
+  
+    .sidenav__nav__socials a {
+      color: #fff;
+      padding-right: 15px;
+      font-size: 20px;
+    }
+  
+    .sidenav__nav__socials i {
+      &:hover {
+        color: rgba(255, 0, 0, 0.5);
+      }
+    }
+  }
+  

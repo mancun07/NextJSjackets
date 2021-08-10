@@ -1,0 +1,24 @@
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    border: none;
+    margin: 0 0 50px 0;
+}
+
+.singleNews {
+    text-align: center;
+    margin: 50px 0;
+    // width: 300px;
+
+    img {
+        max-width:600px;
+        max-height:300px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        
+    }
+}

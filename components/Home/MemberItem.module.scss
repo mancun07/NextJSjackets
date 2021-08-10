@@ -1,0 +1,25 @@
+.member-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.member-item__photo {
+    width: 300px;
+    box-shadow: 0 0 8px #fff;
+    transition: 0.5s all;
+    perspective: 500px;
+    // max-height: 200px;
+
+    &:hover {
+        cursor: pointer;
+        transform: rotateY(180deg);
+    }
+
+  
+}
+
+.member-item__name {
+    font-size: 20px;
+}
