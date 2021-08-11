@@ -16,7 +16,7 @@ const AudioPlayer = (props) => {
     const playHandler = () => {
         audioRef.current.play();
         setPlayState(true)
-    }
+    } 
 
     const pauseHandler = () => {
         audioRef.current.pause();
@@ -70,6 +70,7 @@ const AudioPlayer = (props) => {
                         width="75" 
                         height="75"
                         layout="responsive"
+                        priority={true}
                         />
                 </div>
 

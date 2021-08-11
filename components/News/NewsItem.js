@@ -16,6 +16,7 @@ const NewsItem = ({el}) => {
                   <Image src={el.image} alt={el.title}
                   width="200" height="130"
                   layout="responsive"
+                  priority={true}
                   />
             </div>
             <p>{el.date}</p>
