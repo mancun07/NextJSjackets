@@ -5,7 +5,7 @@ import classes from './VideoList.module.scss'
 const VideoList = (props) => {
     return (
         <div className={classes['video-list']}>
-            <p>Видео с концертов</p>
+            <h2>Видео с концертов</h2>
             <hr />
             <ul>
                 {props.videos.map(el => {

@@ -4,8 +4,8 @@ import classes from './VideoItem.module.scss'
 const VideoItem = ({el}) => {
     return (
         <li className={classes['video-item']}>
-            <p>{el.title}</p>
-            <p>{el.date}</p>
+            <h2>{el.title}</h2>
+            <h3>{el.date}</h3>
             <p>{el.venue}</p>
             <iframe 
             src={el.url} 
@@ -16,6 +16,7 @@ const VideoItem = ({el}) => {
             allowFullScreen
             >    
             </iframe>
+            <hr/>  
         </li>
     )
 }

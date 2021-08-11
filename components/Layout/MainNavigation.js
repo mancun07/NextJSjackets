@@ -25,6 +25,7 @@ const MainNavigation = () => {
                     <li><Link href={'/news'}>НОВОСТИ</Link></li>
                     <li><Link href="/photos">ФОТО</Link></li>
                     <li><Link href="/videos">ВИДЕО</Link></li>
+                    <li><Link href="/audio">АУДИО</Link></li>
                 </ul>
                 <ul className={classes.menu2}>
                     <li><Link href="/">VK</Link></li>
