@@ -6,12 +6,12 @@ const AudioPlayer = (props) => {
     const [songIndex, setSongIndex] = useState(0)
     const [playState, setPlayState] = useState(false)
     const audioRef = useRef(null)
-    // const [divIsShown, setDivIsShown] = useState(false)
     // const showDivRef = useRef(null)
 
 
     let songImage = props.audios[songIndex].src;
     let songRecord = props.audios[songIndex].mp3;
+    let songName = props.audios[songIndex].title;
 
     const playHandler = () => {
         audioRef.current.play();
@@ -76,7 +76,7 @@ const AudioPlayer = (props) => {
                         />
                 </div>
 
-                {/* <div ref={showDivRef} className={`${classes.show} ${divIsShown && classes.isActive}`}></div> */}
+                <div className={`${classes.show} ${playState && classes.isActive}`}>{songName}</div>
             </div>
         </div>
     )
