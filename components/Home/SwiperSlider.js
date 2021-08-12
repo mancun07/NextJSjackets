@@ -50,6 +50,7 @@ export default function Sli(props) {
                   <Image src={el.src} alt="" 
                   //  width="100vw" height="100vh"
                    layout="fill"
+                   priority={true}
                   />
                 </SwiperSlide> )
             })}

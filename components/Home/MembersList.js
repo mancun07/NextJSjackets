@@ -2,7 +2,10 @@ import React from 'react'
 import MemberItem from './MemberItem'
 import classes from './MembersList.module.scss'
 
+
 const MembersList = (props) => {
+
+ 
     return (
         <div className={`${classes[`members-list`]} container`}>
             <h2>Участники группы</h2>

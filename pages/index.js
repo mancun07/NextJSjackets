@@ -1,9 +1,15 @@
+import {Fragment, useEffect} from 'react'
 import Head from 'next/head'
 // import Image from 'next/image'
 import SwiperSlider from '../components/Home/SwiperSlider'
 import Description from '../components/Home/Description'
 import React from 'react'
 import MembersList from '../components/Home/MembersList'
+import { useDispatch } from 'react-redux'
+import { navbarActions } from '../store/navbarSlice'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+
 
 const dummyImages = [
   {id: '1', src:'/concert1.jpg'},
@@ -41,12 +47,25 @@ const DummyMembers = [
 
 
 const HomePage = () => {
+
+   const dispatch = useDispatch();
+
+  useEffect(() => {
+      dispatch(navbarActions.changeNavbarColor())
+
+      return () => dispatch(navbarActions.changeNavbarColor())
+  }, [])
+
   return (
-    <>
+    <Fragment>
+      <Head>
+        <title>Main Page</title>
+        <meta name="description" content="Main Page" />
+      </Head>
       <SwiperSlider images={dummyImages}/>
       <Description socials={dummySocials}/>
       <MembersList members={DummyMembers}/>
-    </>
+    </Fragment>
   )
 }
 

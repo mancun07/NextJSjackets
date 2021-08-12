@@ -1,11 +1,12 @@
 .header {
-    background:#333 linear-gradient(180deg,#000,transparent);
+    // background:#333 linear-gradient(180deg,#000,transparent);
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 70px;
     width: 100%;
-    position: relative;
+    position: absolute;
+    z-index:2;
 }
 
 .logo {

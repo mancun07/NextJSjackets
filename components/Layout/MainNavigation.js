@@ -4,9 +4,14 @@ import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
 import { navbarActions } from '../../store/navbarSlice'
 
+
 const MainNavigation = () => {
 
     const mobileMenuIsShown = useSelector(state => state.navbar.mobileMenuIsShown);
+    const navbarColorIsDark = useSelector(state => state.navbar.navbarColorIsDark);
+    const light = useSelector(state => state.navbar.light);
+    const dark = useSelector(state => state.navbar.dark);
+    
     const dispatch = useDispatch();
 
 
@@ -14,9 +19,12 @@ const MainNavigation = () => {
         dispatch(navbarActions.toggleMenu())
     }
 
+    let theme = navbarColorIsDark ? dark : light
+
+
     return (
         <Fragment>
-        <header className={classes.header}>
+        <header className={classes.header} style={{background: theme.bg}}>
             <div className={classes[`sidenav-trigger`]} onClick={toggleMenu}></div>
             <div className={classes.logo}>Leather Jackets</div>
             <nav className={classes.navbar}>

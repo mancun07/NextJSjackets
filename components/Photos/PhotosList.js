@@ -8,9 +8,9 @@ const PhotosList = (props) => {
         <div className={classes['photos-list']}>
             {props.photos.map(el => {
                 return <motion.img
-                initial={{y: '-100vw'}}
-                animate={{y: 0}}
-                transition={{duration: 0.5, type: 'spring'}}
+                initial={{x: '-100vw'}}
+                animate={{x: 0}}
+                transition={{duration: 1, type: 'spring'}}
                 whileHover={{
                     scale: 1.1,
                     rotateZ: 5,

@@ -24,6 +24,7 @@ const AudioPlayer = (props) => {
     }
 
     const handleNextSong = () => {
+        setPlayState(true)
         if (songIndex < (props.audios.length - 1)) {
         setSongIndex((prevState) => {
             return prevState + 1
@@ -33,10 +34,11 @@ const AudioPlayer = (props) => {
         }
         setTimeout(() => {
             audioRef.current.play();   
-        }, 500);
+        }, 100);
     }
 
     const handlePrevSong = () => {
+        setPlayState(true)
         if (songIndex === 0) {
             setSongIndex(props.audios.length - 1)
         } else {
@@ -46,7 +48,7 @@ const AudioPlayer = (props) => {
         }
         setTimeout(() => {
             audioRef.current.play();   
-        }, 500);
+        }, 100);
     }
 
 
