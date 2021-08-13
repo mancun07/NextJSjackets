@@ -1,7 +1,8 @@
 import React from 'react'
 import classes from './PhotosList.module.scss'
 import {motion} from 'framer-motion'
-// import Image from 'next/image'
+import PropTypes from 'prop-types';
+
 
 const PhotosList = (props) => {
     return (
@@ -25,5 +26,9 @@ const PhotosList = (props) => {
         </div>
     )
 }
+
+PhotosList.propTypes = {
+    photos: PropTypes.array
+  };
 
 export default PhotosList

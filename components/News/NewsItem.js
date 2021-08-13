@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './NewsItem.module.scss'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+import PropTypes from 'prop-types';
 
 const NewsItem = ({el}) => {
     const router = useRouter();
@@ -26,5 +27,10 @@ const NewsItem = ({el}) => {
         </div>
     )
 }
+
+NewsItem.propTypes = {
+    el: PropTypes.object
+  };
+
 
 export default NewsItem

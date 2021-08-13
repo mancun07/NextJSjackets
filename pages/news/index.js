@@ -3,6 +3,7 @@ import NewsList from '../../components/News/NewsList'
 import {MongoClient} from 'mongodb'
 
 
+
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.op8yb.mongodb.net/JACKETS?retryWrites=true&w=majority`
 
 const NewsPage = (props) => {
@@ -42,7 +43,8 @@ export const getStaticProps = async () => {
         },
         revalidate: 1000
     }
-
 }
+
+
 
 export default NewsPage

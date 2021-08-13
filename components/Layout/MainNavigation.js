@@ -1,8 +1,8 @@
 import React, {Fragment, useRef, useEffect} from 'react'
-import classes from './MainNavigation.module.scss'
 import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
 import { navbarActions } from '../../store/navbarSlice'
+import classes from './MainNavigation.module.scss'
 
 
 const MainNavigation = () => {
@@ -45,14 +45,14 @@ const MainNavigation = () => {
 
         {/* mobile menu */}
         <div className={mobileMenuIsShown ? classes[`sidenav-is-active`] : classes.sidenav}>
-            <ul className="sidenav__nav__menu">
-                <li onClick={toggleMenu}><Link href={'/'}>ГЛАВНАЯ</Link></li>
+            <ul className={classes.sidenav__nav__menu}>
+                <li onClick={toggleMenu}><Link href={'/'}><a>ГЛАВНАЯ</a></Link></li>
                 <li onClick={toggleMenu}><Link href={'/news'}>НОВОСТИ</Link></li>
                 <li onClick={toggleMenu}><Link href={'/photos'}>ФОТО</Link></li>
                 <li onClick={toggleMenu}><Link href={'/videos'}>ВИДЕО</Link></li>
             </ul>
      
-            <ul className="sidenav__nav__socials">
+            <ul className={classes.sidenav__nav__socials}>
                 <li><a href="https://vk.com/kkurtki" target="blank"><i className="fab fa-vk fa-2x"></i></a></li>
                 <li> <a href="https://www.youtube.com/channel/UCcUbnoi0qkje6LeWTYyEIcg" target="blank"><i className="fab fa-youtube fa-2x"></i></a></li>
                 <li><a href="https://www.instagram.com/music_jackets/" target="blank"><i className="fab fa-instagram fa-2x"></i></a></li>

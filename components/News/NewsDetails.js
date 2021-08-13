@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import classes from './NewsDetails.module.scss'
 import Image from 'next/image'
+import PropTypes from 'prop-types';
 
 
 const NewsDetails = (props) => {
@@ -19,5 +20,11 @@ const NewsDetails = (props) => {
         </div>
     )
 }
+
+
+NewsDetails.propTypes = {
+    singleNews: PropTypes.object
+  };
+
 
 export default NewsDetails

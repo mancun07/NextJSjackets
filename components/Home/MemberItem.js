@@ -3,8 +3,9 @@ import classes from './MemberItem.module.scss'
 import Image from 'next/image'
 
 const MemberItem = ({el}) => {
+    // style={{flexDirection: el.direction}}
     return (
-        <div style={{flexDirection: el.direction}} className={classes[`member-item`]}>
+        <div className={classes[`member-item`]}>
             <span className={classes[`member-item__name`]}>
                 {el.title}
             </span>

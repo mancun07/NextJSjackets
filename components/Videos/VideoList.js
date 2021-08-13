@@ -1,6 +1,7 @@
 import React from 'react'
 import VideoItem from './VideoItem'
 import classes from './VideoList.module.scss'
+import PropTypes from 'prop-types';
 
 const VideoList = (props) => {
     return (
@@ -15,5 +16,9 @@ const VideoList = (props) => {
         </div>
     )
 }
+
+VideoList.propTypes = {
+    videos: PropTypes.array
+  };
 
 export default VideoList

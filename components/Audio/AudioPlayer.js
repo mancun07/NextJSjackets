@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react'
 import classes from './AudioPlayer.module.scss'
 import Image from 'next/image'
+import PropTypes from 'prop-types';
 
 const AudioPlayer = (props) => {
     const [songIndex, setSongIndex] = useState(0)
@@ -81,5 +82,10 @@ const AudioPlayer = (props) => {
         </div>
     )
 }
+
+AudioPlayer.propTypes = {
+    audios: PropTypes.array
+  };
+
 
 export default AudioPlayer

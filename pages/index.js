@@ -7,7 +7,7 @@ import React from 'react'
 import MembersList from '../components/Home/MembersList'
 import { useDispatch } from 'react-redux'
 import { navbarActions } from '../store/navbarSlice'
-import '@fortawesome/fontawesome-svg-core/styles.css'
+
 
 
 

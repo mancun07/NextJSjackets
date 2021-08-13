@@ -23,4 +23,11 @@
 
 .member-item__name {
     font-size: 20px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 687px) {
+    .member-item {
+        flex-direction: column;
+    } 
 }
