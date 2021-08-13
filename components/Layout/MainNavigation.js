@@ -50,6 +50,7 @@ const MainNavigation = () => {
                 <li onClick={toggleMenu}><Link href={'/news'}>НОВОСТИ</Link></li>
                 <li onClick={toggleMenu}><Link href={'/photos'}>ФОТО</Link></li>
                 <li onClick={toggleMenu}><Link href={'/videos'}>ВИДЕО</Link></li>
+                <li onClick={toggleMenu}><Link href={'/audio'}>АУДИО</Link></li>
             </ul>
      
             <ul className={classes.sidenav__nav__socials}>
