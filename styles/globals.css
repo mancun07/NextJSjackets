@@ -44,6 +44,12 @@ img {
   background-size: cover;
 }
 
+@media (max-width: 587px) {
+  .mainImage {
+    background: #000;
+  }
+}
+
 
 #root { height: 100% }
 html {

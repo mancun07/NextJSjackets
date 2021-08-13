@@ -1,7 +1,7 @@
 .news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:1rem;
+    gap:2rem;
     background: #1b1b2a;
     padding: 20px;
     color: #fff;
@@ -10,15 +10,16 @@
     opacity: 0.9;
 }
 
-@media (max-width: 687px) {
+@media (max-width: 887px) {
     .news {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 487px) {
+@media (max-width: 587px) {
     .news {
         grid-template-columns: 1fr;
+        margin-top: 100px;
     }
 }
 
