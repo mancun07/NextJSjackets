@@ -23,7 +23,7 @@ const NewsItem = ({el}) => {
             <p>{el.date}</p>
             <h2>{el.title}</h2>
             <p>{el.description}</p>
-            <button className={classes.btn} onClick={goToSingleNewsHandler}>ЧИТАТЬ ДАЛЕЕ</button>
+            <button className={classes.btn} onClick={goToSingleNewsHandler}>Читать далее</button>
         </div>
     )
 }
