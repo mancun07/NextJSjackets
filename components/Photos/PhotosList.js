@@ -46,8 +46,9 @@ const PhotosList = (props) => {
                  <Image src={imageSrc} alt={'band members'} width="200" height="200"
                   layout="responsive"
                   priority={true}/>
+                  <span className={classes.close} onClick={closeOverlay}>X</span>
         </div>}
-        {overlayOpen && <div className={classes.close} onClick={closeOverlay}>X</div>}
+        {/* {overlayOpen && <div className={classes.close} onClick={closeOverlay}>X</div>} */}
         </Fragment>
     )
 }
