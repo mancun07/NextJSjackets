@@ -5,6 +5,11 @@ const Footer = () => {
     return (
         <footer className={classes.footer}>
            <p>Мы в социальных сетях</p> 
+            <ul className={classes['footer-menu']}>
+                <li><a href="https://vk.com/kkurtki" target="blank"><i className="fa fa-vk"></i></a></li>
+                <li> <a href="https://www.youtube.com/channel/UCcUbnoi0qkje6LeWTYyEIcg" target="blank"><i className="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/music_jackets/" target="blank"><i className="fa fa-instagram"></i></a></li>
+            </ul>
         </footer>
     )
 }
