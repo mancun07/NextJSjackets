@@ -43,7 +43,7 @@ const PhotosList = (props) => {
             })}
         </div>
         {overlayOpen && <div className={classes.imageContainer}>
-                 <Image src={imageSrc} width="200" height="200"
+                 <Image src={imageSrc} alt={'band members'} width="200" height="200"
                   layout="responsive"
                   priority={true}/>
         </div>}
