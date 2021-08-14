@@ -31,7 +31,7 @@
 
     div {
         width: 60vw;
-        height: 60vh;
+        height: 80vh;
         border: 2px solid #fff;
     }
 
@@ -68,7 +68,8 @@
 
     .imageContainer {
         div {
-            width: 80%;
+            width: 80vw;
+            height: auto;
         }
 }
 }
