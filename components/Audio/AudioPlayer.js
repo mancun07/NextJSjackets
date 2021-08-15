@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const AudioPlayer = (props) => {
     const [songIndex, setSongIndex] = useState(0)
     const [playState, setPlayState] = useState(false)
-    const audioRef = useRef(null)
+    const audioRef = useRef('')
     // const showDivRef = useRef(null)
 
 
