@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import AudioPlayer from '../../components/Audio/AudioPlayer'
+import Head from 'next/head'
 
 const DummyAudios = [
     {
@@ -16,9 +17,15 @@ const DummyAudios = [
 
 const AudioPage = () => {
     return (
-        <div className="container">
-            <AudioPlayer audios={DummyAudios}/>
-        </div>
+        <Fragment>
+            <Head>
+                <title>Audio Page</title>
+                <meta name="description" content="Audio Page" />
+            </Head>
+            <div className="container">
+                <AudioPlayer audios={DummyAudios}/>
+            </div>
+        </Fragment>
     )
 }
 

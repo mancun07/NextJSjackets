@@ -1,6 +1,5 @@
-import {Fragment, useEffect, useRef} from 'react'
+import {Fragment, useEffect} from 'react'
 import Head from 'next/head'
-// import Image from 'next/image'
 import SwiperSlider from '../components/Home/SwiperSlider'
 import Description from '../components/Home/Description'
 import React from 'react'
@@ -12,9 +11,9 @@ import { navbarActions } from '../store/navbarSlice'
 
 
 const dummyImages = [
-  {id: '1', src:'/concert1.jpg'},
-  {id: '2', src:'/concert2.jpg'},
-  {id: '3', src:'/concert3.jpg'},
+  {id: '1', src:'/concert1.jpg', title:"concert"},
+  {id: '2', src:'/concert2.jpg', title:"concert" },
+  {id: '3', src:'/concert3.jpg', title:"concert"},
 ]
 
 const dummySocials = [
@@ -54,12 +53,6 @@ const HomePage = () => {
       dispatch(navbarActions.changeNavbarColor())
 
       return () => dispatch(navbarActions.changeNavbarColor())
-  }, [])
-
-  useEffect(() => {
-    if ((window.scrollY) > 200) {
-      console.log('Test')
-    }
   }, [])
 
 

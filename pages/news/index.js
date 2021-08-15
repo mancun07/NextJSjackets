@@ -1,6 +1,7 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, Fragment} from 'react'
 import NewsList from '../../components/News/NewsList'
 import {MongoClient} from 'mongodb'
+import Head from 'next/head'
 
 
 
@@ -17,9 +18,15 @@ const NewsPage = (props) => {
     }, [])
 
     return (
-        <div className="container">
-            <NewsList news={props.news}/>
-        </div>
+       <Fragment> 
+            <Head>
+                <title>News Page</title>
+                <meta name="description" content="News Page" />
+            </Head>
+            <div className="container">
+                <NewsList news={props.news}/>
+            </div>
+        </Fragment>
     )
 }
 

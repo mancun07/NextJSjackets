@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import VideoList from '../../components/Videos/VideoList'
 import { v4 } from "uuid";
+import Head from 'next/head'
 
 const DummyVideos = [
     {
@@ -39,9 +40,15 @@ const DummyVideos = [
 
 const VideosPage = () => {
     return (
+      <Fragment>
+        <Head>
+            <title>Video Page</title>
+            <meta name="description" content="Video Page" />
+        </Head>
         <div className="container">
             <VideoList videos={DummyVideos}/>
         </div>
+      </Fragment>
     )
 }
 

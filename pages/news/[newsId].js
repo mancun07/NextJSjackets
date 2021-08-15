@@ -1,14 +1,21 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import {MongoClient, ObjectId} from 'mongodb'
 import NewsDetails from '../../components/News/NewsDetails'
+import Head from 'next/head'
 
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.op8yb.mongodb.net/JACKETS?retryWrites=true&w=majority`
 
 const SingleNewsPage = (props) => {
     return (
-        <div className="container">
-            <NewsDetails singleNews={props.singleNews}/>
-        </div>
+        <Fragment>
+            <Head>
+                <title>Single News Page</title>
+                <meta name="description" content="Single News Page" />
+            </Head>
+            <div className="container">
+                <NewsDetails singleNews={props.singleNews}/>
+            </div>
+        </Fragment>
     )
 }
 

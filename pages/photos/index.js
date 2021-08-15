@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import PhotosList from '../../components/Photos/PhotosList'
 import { v4 } from "uuid";
+import Head from 'next/head'
 
 const dummyPhotos = [
     {id: v4(), title: 'Band Photo1', src:'/about1.jpg'},
@@ -16,9 +17,15 @@ const dummyPhotos = [
 
 const PhotosPage = () => {
     return (
-        <div className="container">
-            <PhotosList photos={dummyPhotos}/>
-        </div>
+        <Fragment>
+            <Head>
+                <title>Photos Page</title>
+                <meta name="description" content="Photos Page" />
+            </Head>
+            <div className="container">
+                <PhotosList photos={dummyPhotos}/>
+            </div>
+        </Fragment>
     )
 }
 

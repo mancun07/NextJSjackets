@@ -30,10 +30,7 @@ SwiperCore.use([Autoplay,Pagination,Navigation]);
 
 export default function Sli(props) {
   
-    // autoplay={{
-    //     "delay": 2500,
-    //     "disableOnInteraction": false
-    //   }}
+    
   
   return (
     <>
@@ -42,12 +39,17 @@ export default function Sli(props) {
             centeredSlides={true}  
             pagination={{
         "clickable": true
-        }} navigation={true}>
+        }} navigation={true}
+        autoplay={{
+        "delay": 2500,
+        "disableOnInteraction": false
+      }}
+        >
             
             {props.images.map(el => {
                 return (
                 <SwiperSlide className="swiper-slide" key={el.id}>
-                  <Image src={el.src} alt="" 
+                  <Image src={el.src} alt={el.title} 
                   //  width="100vw" height="100vh"
                    layout="fill"
                    priority={true}
