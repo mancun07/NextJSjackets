@@ -11,11 +11,10 @@
 
     img {
         width: 200px;
-        // max-height:200px;
-        // object-fit: cover;
         cursor: pointer;
         transition: all 0.3s ease-out;
         transform-style: preserve-3d;
+        object-fit: cover;
 
         &:hover {
             transform: scale(1.2);
@@ -39,5 +38,13 @@
 .newsItem {
     border-bottom: 2px solid #fff;
     padding-bottom:20px;
+
+    img {
+        &:hover {
+            transform: scale(1);
+        }
+    }
 }
+
+
 }

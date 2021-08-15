@@ -11,11 +11,10 @@
     box-shadow: 0 0 8px #fff;
     transition: 0.5s all;
     perspective: 500px;
-    // max-height: 200px;
 
     &:hover {
         cursor: pointer;
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
     }
 
   
