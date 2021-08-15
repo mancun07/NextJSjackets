@@ -1,4 +1,4 @@
-import {Fragment, useEffect} from 'react'
+import {Fragment, useEffect, useRef} from 'react'
 import Head from 'next/head'
 // import Image from 'next/image'
 import SwiperSlider from '../components/Home/SwiperSlider'
@@ -55,6 +55,13 @@ const HomePage = () => {
 
       return () => dispatch(navbarActions.changeNavbarColor())
   }, [])
+
+  useEffect(() => {
+    if ((window.scrollY) > 200) {
+      console.log('Test')
+    }
+  }, [])
+
 
   return (
     <Fragment>

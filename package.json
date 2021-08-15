@@ -9,14 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
     "@reduxjs/toolkit": "^1.6.1",
     "font-awesome": "^4.7.0",
     "framer-motion": "^4.1.17",
     "install": "^0.13.0",
-    "lightbox2": "^2.11.3",
     "mongodb": "^4.0.1",
     "next": "11.0.1",
     "npm": "^7.20.3",
@@ -24,6 +20,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-redux": "^7.2.4",
+    "react-reveal": "^1.2.2",
     "sass": "^1.37.0",
     "swiper": "^6.8.1",
     "uuid": "^8.3.2"
