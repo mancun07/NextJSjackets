@@ -1,18 +1,25 @@
-import React, {useRef, useState} from 'react'
+import React, {useRef, useState, useReducer} from 'react'
 import classes from './AudioPlayer.module.scss'
 import Image from 'next/image'
 import PropTypes from 'prop-types';
 
+
+
 const AudioPlayer = (props) => {
-    const [songIndex, setSongIndex] = useState(0)
-    const [playState, setPlayState] = useState(false)
+    // const [songIndex, setSongIndex] = useState(0)
+    // const [playState, setPlayState] = useState(false)
     const audioRef = useRef('')
     // const showDivRef = useRef(null)
 
+    const [songState, dispatch] = useReducer(songReducer, {
+        songIndex: 0,
+        playState: false
+    })
 
-    let songImage = props.audios[songIndex].src;
-    let songRecord = props.audios[songIndex].mp3;
-    let songName = props.audios[songIndex].title;
+
+    const songImage = props.audios[songIndex].src;
+    const songRecord = props.audios[songIndex].mp3;
+    const songName = props.audios[songIndex].title;
 
     const playHandler = () => {
         audioRef.current.play();
