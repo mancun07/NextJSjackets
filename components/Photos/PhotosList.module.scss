@@ -5,7 +5,13 @@
     margin-top:170px;
     margin-bottom: 100px;
 
+    div {
+        transform: skew(-5deg);
+        overflow: hidden;
+    }
+
     img {
+        transform: skew(5deg) scale(1.2);
         &:hover {
             cursor: pointer;
         }
