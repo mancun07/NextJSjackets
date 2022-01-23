@@ -10,13 +10,13 @@ import { navbarActions } from '../store/navbarSlice'
 
 
 
-const dummyImages = [
+const images = [
   {id: '1', src:'/concert1.jpg', title:"concert"},
   {id: '2', src:'/concert2.jpg', title:"concert" },
   {id: '3', src:'/concert3.jpg', title:"concert"},
 ]
 
-const dummySocials = [
+const socials = [
   {id: '1', 
   title: 'Канал группы в YouTube', 
   pic: <i className="fa fa-youtube" aria-hidden="true"></i>, href:'https://www.youtube.com/channel/UCcUbnoi0qkje6LeWTYyEIcg',
@@ -35,11 +35,11 @@ const dummySocials = [
   }
 ]
 
-const DummyMembers = [
+const members = [
   {id: '1', title: 'Boris Britva - вокал, гитара', src: '/boris.jpg', direction: 'row-reverse'},
   {id: '2', title: 'Боярский Максим - ударные', src: '/maxim.jpg', direction: 'row'},
   {id: '3', title: 'Музыченко Дмитрий - бас', src: '/dima.jpg', direction: 'row-reverse'},
-  {id: '4', title: 'Андрей Лазук - клавишные', src: '/andrew.jpg', direction: 'row'}
+  // {id: '4', title: 'Андрей Лазук - клавишные', src: '/andrew.jpg', direction: 'row'}
 ]
 
 
@@ -59,12 +59,12 @@ const HomePage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Main Page</title>
-        <meta name="description" content="Main Page" />
+        <title>Home Page</title>
+        <meta name="description" content="Home Page" />
       </Head>
-      <SwiperSlider images={dummyImages}/>
-      <Description socials={dummySocials}/>
-      <MembersList members={DummyMembers}/>
+      <SwiperSlider images={images}/>
+      <Description socials={socials}/>
+      <MembersList members={members}/>
     </Fragment>
   )
 }

@@ -11,11 +11,6 @@ body {
 }
 
 
-/* "@fortawesome/fontawesome-svg-core": "^1.2.36",
-"@fortawesome/free-solid-svg-icons": "^5.15.4",
-"@fortawesome/react-fontawesome": "^0.1.15", */
-
-
 a {
   color: inherit;
   text-decoration: none;
@@ -42,7 +37,7 @@ img {
 }
 
 .mainImage {
-  background: url('../public/main.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5)), url('../public/main.jpg');
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
@@ -68,7 +63,7 @@ body {
 body {
   background: #1b1b2a;
   color: #fff;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 

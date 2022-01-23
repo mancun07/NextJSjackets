@@ -12,7 +12,7 @@ const MemberItem = ({el}) => {
                 {el.title}
             </span>
             <span className={classes[`member-item__photo`]}>
-                <Image src={el.src} alt={el.title} width="300px" height="300px" priority={true}/>
+                <Image src={el.src} alt={el.title} width="250px" height="250px" priority={true}/>
             </span>
         </div>
         </Slide>

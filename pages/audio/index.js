@@ -23,9 +23,8 @@ const AudioPage = () => {
                 <meta name="description" content="Audio Page" />
             </Head>
             <div className="container">
-                <AudioPlayer audios={DummyAudios}/>
+                <AudioPlayer audios={DummyAudios}/> 
             </div>
-            111111111
         </Fragment>
     )
 }
