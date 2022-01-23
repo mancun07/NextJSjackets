@@ -35,9 +35,7 @@ const AudioPlayer = (props) => {
         } else {
         setSongIndex(0);
         }
-        setTimeout(() => {
-            audioRef.current.play();   
-        }, 100);
+        audioRef.current.play();   
         setPlayState(true)
     }
 
@@ -49,9 +47,7 @@ const AudioPlayer = (props) => {
                 return prevState - 1
             })
         }
-        setTimeout(() => {
-            audioRef.current.play();   
-        }, 100);
+        audioRef.current.play();   
         setPlayState(true)
     }
 
