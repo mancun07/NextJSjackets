@@ -5,7 +5,14 @@ import Head from 'next/head'
 
 
 
+const sortArray = (array) => {
+    return array.sort((a,b) => {
+        return a.date > b.date ? -1 : 1
+    })
+}
+
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.op8yb.mongodb.net/JACKETS?retryWrites=true&w=majority`
+
 
 const NewsPage = (props) => {
 
@@ -17,6 +24,9 @@ const NewsPage = (props) => {
         }
     }, [])
 
+
+    const sortedNews = sortArray(props.news)
+ 
     return (
        <Fragment> 
             <Head>
@@ -24,7 +34,7 @@ const NewsPage = (props) => {
                 <meta name="description" content="News Page" />
             </Head>
             <div className="container">
-                <NewsList news={props.news}/>
+                <NewsList news={sortedNews}/>
             </div>
         </Fragment>
     )
