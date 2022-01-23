@@ -34,7 +34,7 @@ export default function SwiperSlider(props) {
             "clickable": true
             }} navigation={true}
             autoplay={{
-            "delay": 2500,
+            "delay": 5000,
             "disableOnInteraction": false
         }}
           >
