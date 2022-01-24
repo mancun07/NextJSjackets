@@ -10,6 +10,22 @@
 
 .logo {
     font-size: 30px;
+    animation: wiggle 0.3s 1s 8 alternate forwards;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(3deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
 }
 
 .navbar {

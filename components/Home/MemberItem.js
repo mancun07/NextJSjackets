@@ -6,7 +6,7 @@ import {Slide} from 'react-awesome-reveal';
 const MemberItem = ({el}) => {
     // style={{flexDirection: el.direction}}
     return (
-        <Slide triggerOnce>
+        <Slide cascade={true} triggerOnce={true}>
         <div className={classes[`member-item`]}>
             <span className={classes[`member-item__name`]}>
                 {el.title}

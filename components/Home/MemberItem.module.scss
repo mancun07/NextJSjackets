@@ -9,12 +9,17 @@
     width: 250px;
     height: 250px;
     box-shadow: 0 0 8px #fff;
-    transition: 0.5s all;
-    perspective: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 1s all;
+    perspective: 1000px;
+    transform: rotateY(0deg);
+    // transform-style: preserve-3d;
+
 
     &:hover {
         cursor: pointer;
-        // transform: rotateY(180deg);
+        transform: rotateY(180deg);
     }
 
   

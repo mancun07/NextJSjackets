@@ -24,15 +24,16 @@ const PhotosList = (props) => {
 
     return (
         <Fragment>
-        <div className={classes['photos-list']}>
+        <motion.div className={classes['photos-list']}    
+                initial={{x: '-100vw'}}
+                animate={{x: 0}}
+                transition={{duration: 1, type: 'spring'}}>
             {props.photos.map(el => {
-                return <div key={el.id} onClick={() => showOverlay(el.id)} >
+                return <div                 
+                key={el.id} onClick={() => showOverlay(el.id)} >
                 <motion.img
                 src={el.src} 
                 alt={el.title}
-                initial={{x: '-100vw'}}
-                animate={{x: 0}}
-                transition={{duration: 1, type: 'spring'}}
                 whileHover={{
                     scale: 1.1,
                     rotateZ: 5,
@@ -41,7 +42,7 @@ const PhotosList = (props) => {
                 />
                 </div>
             })}
-        </div>
+        </motion.div>
         {overlayOpen && <div className={classes.imageContainer}>
                  <Image src={imageSrc} alt={'band members'} width="200" height="200"
                   layout="responsive"
