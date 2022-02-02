@@ -29,18 +29,21 @@ const PhotosList = (props) => {
                 animate={{x: 0}}
                 transition={{duration: 1, type: 'spring'}}>
             {props.photos.map(el => {
-                return <div                 
-                key={el.id} onClick={() => showOverlay(el.id)} >
-                <motion.img
-                src={el.src} 
-                alt={el.title}
+                return <motion.div                 
+                key={el.id} onClick={() => showOverlay(el.id)} 
                 whileHover={{
                     scale: 1.1,
                     rotateZ: 5,
                     boxShadow: "0px 0px 8px rgb(255,255,255)"  
                 }}
+                >
+                <Image
+                src={el.src} 
+                alt={el.title}
+                width="300" height="300"
+                priority={true}
                 />
-                </div>
+                </motion.div>
             })}
         </motion.div>
         {overlayOpen && ( 
