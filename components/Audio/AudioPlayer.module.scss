@@ -1,9 +1,8 @@
 .playerWrapper {
-    margin: 0 auto;
-    margin-top: 300px;
+    // margin: auto;
+    margin-top: 45vh;
     text-align: center;
-    position:relative;
-    margin-bottom: 300px;
+    // position:relative;
 }
 
 .disk {
@@ -38,8 +37,8 @@
     background: #333 linear-gradient(180deg, #000, transparent);
     border-radius: 10px;
     position: relative;
-    width:500px;
-    max-width: 90%;
+    width:90%;
+    max-width: 500px;
     height: 80px;
     padding:10px;
     display: grid;

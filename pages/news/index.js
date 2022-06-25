@@ -16,6 +16,8 @@ const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 
 const NewsPage = (props) => {
 
+    console.log(props.news)
+
     useEffect(() => {
         document.querySelector('body').classList.add('mainImage');
 

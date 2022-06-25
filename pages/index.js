@@ -28,11 +28,11 @@ const socials = [
   pic: <i className="fa fa-vk" aria-hidden="true"></i>, href: 'https://vk.com/kkurtki',
   color: 'steelblue'
   },
-  {id: '3', 
-  title: 'Сообщество группы в Instagram', 
-  pic: <i className="fa fa-instagram" aria-hidden="true"></i>, href: 'https://www.instagram.com/music_jackets/',
-  color: 'black'
-  }
+  // {id: '3', 
+  // title: 'Сообщество группы в Instagram', 
+  // pic: <i className="fa fa-instagram" aria-hidden="true"></i>, href: 'https://www.instagram.com/music_jackets/',
+  // color: 'black'
+  // }
 ]
 
 const members = [

@@ -2,10 +2,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    // margin-top:170px;
-    // margin-bottom: 100px;
     max-width: 960px;
-    margin: 170px auto 100px;
+    margin: 130px auto 100px;
 
     div {
         transform: skew(-5deg);
@@ -21,20 +19,6 @@
     }
 }
 
-.backdrop {
-    background: rgba(0,0,0,0.95);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index:100;
-    top: 0;
-    left:0;
-    right:0;
-    bottom:0;
-    opacity: 0.9;
-    animation: anim1 .5s ease-in-out forwards;
-}
 
 .modal {
         position: fixed;
@@ -60,34 +44,24 @@
     }
 }
 
-@keyframes anim1 {
-    from {
-        opacity:0;
-        transform: scale(0.9);
-      }
-    
-      to {
-        opacity:0.9;
-        transform: scale(1);
-      }
-}
+// 
 
-@keyframes anim2 {
-    from {
-        transform: scale(0.9);
-      }
+// @keyframes anim2 {
+//     from {
+//         transform: scale(0.9);
+//       }
     
-      to {
-        transform: scale(1);
-      }
-}
+//       to {
+//         transform: scale(1);
+//       }
+// }
 
 .close {
     position: absolute;
     top:15px;
     right: 20px;     
     cursor: pointer;
-    font-size:28px;  
+    font-size:1.8rem;  
 }
 
 

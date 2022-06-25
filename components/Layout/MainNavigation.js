@@ -1,4 +1,5 @@
 import React, {Fragment, useRef, useEffect} from 'react'
+import Backdrop from './Backdrop'
 import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
 import { navbarActions } from '../../store/navbarSlice'
@@ -38,13 +39,14 @@ const MainNavigation = () => {
                 <ul className={classes.menu2}>
                     <li><a href="https://vk.com/kkurtki" target="blank"><i className="fa fa-vk"></i></a></li>
                     <li> <a href="https://www.youtube.com/channel/UCcUbnoi0qkje6LeWTYyEIcg" target="blank"><i className="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.instagram.com/music_jackets/" target="blank"><i className="fa fa-instagram"></i></a></li>
                 </ul>
             </nav>
         </header>
 
         {/* mobile menu */}
-        <div className={mobileMenuIsShown ? classes[`sidenav-is-active`] : classes.sidenav}>
+        {mobileMenuIsShown && <Backdrop onClick={toggleMenu}/>}
+        <div className={`${classes.sidenav} ${mobileMenuIsShown && classes[`sidenav-is-active`]}`}> 
+            <div className={classes.close} onClick={toggleMenu}>X</div>
             <ul className={classes.sidenav__nav__menu}>
                 <li onClick={toggleMenu}><Link href={'/'}><a>ГЛАВНАЯ</a></Link></li>
                 <li onClick={toggleMenu}><Link href={'/news'}>НОВОСТИ</Link></li>
@@ -56,7 +58,6 @@ const MainNavigation = () => {
             <ul className={classes.sidenav__nav__socials}>
                 <li><a href="https://vk.com/kkurtki" target="blank"><i className="fa fa-vk fa-2x"></i></a></li>
                 <li> <a href="https://www.youtube.com/channel/UCcUbnoi0qkje6LeWTYyEIcg" target="blank"><i className="fa fa-youtube fa-2x"></i></a></li>
-                <li><a href="https://www.instagram.com/music_jackets/" target="blank"><i className="fa fa-instagram fa-2x"></i></a></li>
             </ul>
         </div>
         </Fragment>

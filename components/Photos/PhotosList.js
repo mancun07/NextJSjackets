@@ -1,4 +1,5 @@
 import React, {Fragment, useState, useRef, useEffect} from 'react'
+import Backdrop from '../Layout/Backdrop';
 import classes from './PhotosList.module.scss'
 import {motion} from 'framer-motion'
 import PropTypes from 'prop-types';
@@ -48,9 +49,11 @@ const PhotosList = (props) => {
         </motion.div>
         {overlayOpen && ( 
             <Fragment>
-            <div className={classes.backdrop}>
-                  <span className={classes.close} onClick={closeOverlay}>X</span>
-            </div>
+            {/* <div className={classes.backdrop}> */}
+                <Backdrop>
+                    <span className={classes.close} onClick={closeOverlay}>X</span>
+                </Backdrop>
+            {/* </div> */}
             <div className={classes.modal}>
                 <Image src={imageSrc} alt={'band members'} width="200" height="200"
                     layout="responsive"

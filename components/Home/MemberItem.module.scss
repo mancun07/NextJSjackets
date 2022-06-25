@@ -14,7 +14,6 @@
     transition: 1s all;
     perspective: 1000px;
     transform: rotateY(0deg);
-    // transform-style: preserve-3d;
 
 
     &:hover {
@@ -26,7 +25,7 @@
 }
 
 .member-item__name {
-    font-size: 20px;
+    font-size: 1.25rem;
     padding-bottom: 30px;
 }
 
